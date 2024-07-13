@@ -2,7 +2,7 @@ let btn = document.getElementById("btn");
         
         btn.addEventListener("click",()=>{
         let text = document.getElementById("getText").value;
-
+            //console.log("Hey");
             fetch('https://api.covid19api.com/summary')
             .then((covidData)=>{
                 return covidData.json();
